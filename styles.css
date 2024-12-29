@@ -23,7 +23,7 @@ body {
 
 .header {
     display: flex;
-    align-items: center;
+    justify-content: center;
     padding: 1rem 2rem;
     background-color: white;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -33,32 +33,11 @@ body {
     height: 45px;
     object-fit: contain;
     vertical-align: middle;
-    margin-right: 10px;
 }
 
 .logo {
     display: flex;
     align-items: center;
-}
-
-.nav-menu {
-    margin-left: 2rem;
-    flex-grow: 1;
-}
-
-.nav-link {
-    color: var(--text-color);
-    text-decoration: none;
-    margin-right: 1.5rem;
-}
-
-.login-btn {
-    padding: 0.5rem 1rem;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 .main-content {
@@ -171,10 +150,6 @@ body {
         flex-direction: column;
         text-align: center;
         padding: 1rem;
-    }
-    
-    .nav-menu {
-        margin: 1rem 0;
     }
     
     .message {
