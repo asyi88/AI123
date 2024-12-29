@@ -56,7 +56,6 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px var(--shadow-color);
     border: 1px solid rgba(0, 0, 0, 0.05);
-    min-height: 56vh;
 }
 
 .message {
@@ -141,11 +140,40 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        flex-direction: column;
-        text-align: center;
         padding: 1rem;
     }
     
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 140px);
+        padding-bottom: 1rem;
+    }
+
+    .chat-history {
+        flex: 1;
+        height: auto;
+        min-height: 0;
+        margin-bottom: 1rem;
+    }
+
+    .input-area {
+        margin-top: 0;
+        position: sticky;
+        bottom: 0;
+        background-color: var(--chat-bg);
+    }
+
     .message {
         max-width: 90%;
     }
@@ -155,6 +183,11 @@ body {
     }
 
     .send-btn {
+        padding: 1rem;
+    }
+
+    .footer {
+        margin-top: 0;
         padding: 1rem;
     }
 }

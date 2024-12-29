@@ -123,7 +123,6 @@ AI：${aiResponse}
                 // 重新启用输入和发送按钮
                 messageInput.disabled = false;
                 sendButton.disabled = false;
-                messageInput.focus();
             }
         }
     }
